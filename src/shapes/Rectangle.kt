@@ -3,7 +3,7 @@ package shapes
 import java.lang.Math.pow
 import java.lang.Math.sqrt
 
-class Rectangle(private var topLeft: Point, private var bottomRight: Point) {
+open class Rectangle(private var topLeft: Point, private var bottomRight: Point) {
     init {
         require(topLeft.getX() < bottomRight.getX()) { "Invalid rectangle: left must be less than right" }
         require(topLeft.getY() > bottomRight.getY()) { "Invalid rectangle: top must be greater than bottom" }

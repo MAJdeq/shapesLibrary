@@ -1,16 +1,12 @@
-import shapes.Line
-import shapes.Point
-import shapes.Rectangle
+import shapes.*
 
 fun main(){
-    val p1 = Point(1.0,5.0);
-    val p2 = Point(6.0, 2.0);
+    val pointOne = Point(1.0, 1.0)
+    val pointTwo = Point(3.0, 5.0)
+    val pointThree = Point(7.0, 1.0)
 
-    var rectangle = Rectangle(p1, p2)
+    var triangle = Triangle(pointOne, pointTwo, pointThree)
 
-    println(rectangle.getWidth())
-    println(rectangle.getHeight())
-    println(rectangle.getArea())
-    println(rectangle.move(4.0, 4.0))
-    println(rectangle.getWidth())
+    println(triangle.getArea())
+    triangle.getAttributes()
 }
